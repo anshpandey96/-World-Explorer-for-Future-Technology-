@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Tech Explorer</title>
+  <meta name="description" content="Learn more about Tech Explorer, our mission, and the team behind this platform." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">⬡ Tech<span>Explorer</span></a>
+    <button class="hamburger" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="topics.html">Topics</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====================== PAGE HEADER ====================== -->
+  <header class="page-header">
+    <div class="neon-label">Who We Are</div>
+    <h1 class="page-header-title">About <span class="text-cyan">Tech Explorer</span></h1>
+    <p class="page-header-sub">A community-driven platform where curiosity meets cutting-edge technology education.</p>
+  </header>
+
+  <!-- ====================== MISSION ====================== -->
+  <section class="section">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="about-hexagon">🚀</div>
+      </div>
+      <div class="about-content">
+        <div class="neon-label" style="justify-content:flex-start;">Our Mission</div>
+        <h2>Empowering the <span class="highlight-text">Next Generation</span> of Tech Minds</h2>
+        <p>
+          Tech Explorer was born out of a simple belief: <span class="highlight-text">everyone deserves access to quality technology education</span>.
+          Whether you're a student preparing for exams, a developer levelling up your skills, or a curious mind exploring the digital future — this platform is built for you.
+        </p>
+        <p>
+          We bridge the gap between complex technical concepts and clear, engaging content. No jargon overload, no boring textbooks.
+          Just clean, focused learning that respects your time.
+        </p>
+        <p>
+          Our content is curated by enthusiasts who are actively working in the tech industry, ensuring you get <span class="highlight-text">real-world relevance</span> with every article.
+        </p>
+        <div class="skills-list">
+          <span class="skill-pill">Artificial Intelligence</span>
+          <span class="skill-pill">Web Development</span>
+          <span class="skill-pill">Cyber Security</span>
+          <span class="skill-pill">Cloud Computing</span>
+          <span class="skill-pill">Data Science</span>
+          <span class="skill-pill">DevOps</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="glow-divider" />
+
+  <!-- ====================== VALUES ====================== -->
+  <section class="section">
+    <div class="neon-label">What Drives Us</div>
+    <h2 class="section-title">Our Core <span>Values</span></h2>
+    <p class="section-subtitle">The principles we build everything around</p>
+    <div class="topics-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+
+      <div class="glass-card" style="padding:2rem;">
+        <div style="font-size:2rem;margin-bottom:1rem;">🎯</div>
+        <div class="card-title">Clarity First</div>
+        <p class="card-excerpt" style="margin-bottom:0;">We simplify without dumbing down. Every concept is explained with precision and purpose, making even the hardest ideas accessible.</p>
+      </div>
+
+      <div class="glass-card" style="padding:2rem;">
+        <div style="font-size:2rem;margin-bottom:1rem;">🌍</div>
+        <div class="card-title">Open Access</div>
+        <p class="card-excerpt" style="margin-bottom:0;">Knowledge should never be behind a paywall. All our content is free and will always remain so — for everyone, everywhere.</p>
+      </div>
+
+      <div class="glass-card" style="padding:2rem;">
+        <div style="font-size:2rem;margin-bottom:1rem;">🔬</div>
+        <div class="card-title">Accuracy Matters</div>
+        <p class="card-excerpt" style="margin-bottom:0;">Every article is carefully researched and regularly updated to reflect the fast-moving pace of the tech world.</p>
+      </div>
+
+      <div class="glass-card" style="padding:2rem;">
+        <div style="font-size:2rem;margin-bottom:1rem;">🤝</div>
+        <div class="card-title">Community Driven</div>
+        <p class="card-excerpt" style="margin-bottom:0;">We listen to our readers. Feedback shapes the content, making this a truly collaborative learning ecosystem.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================== TEAM ====================== -->
+  <section class="section" style="background: rgba(0,240,255,0.015);">
+    <div class="neon-label">The Humans Behind It</div>
+    <h2 class="section-title">Meet the <span>Team</span></h2>
+    <p class="section-subtitle">Passionate technologists and educators, working together</p>
+    <div class="team-grid">
+      <div class="team-card glass-card">
+        <div class="team-avatar">👩‍💻</div>
+        <div class="team-name">Aanya Sharma</div>
+        <div class="team-role">Founder & AI Researcher</div>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.8rem;">Specialises in deep learning and NLP. 5+ years in AI research and developer education.</p>
+      </div>
+      <div class="team-card glass-card">
+        <div class="team-avatar">👨‍🔧</div>
+        <div class="team-name">Rohan Mehta</div>
+        <div class="team-role">Full-Stack Developer</div>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.8rem;">React, Node.js, and cloud architecture expert. Builds every technical demo on the platform.</p>
+      </div>
+      <div class="team-card glass-card">
+        <div class="team-avatar">👩‍🔒</div>
+        <div class="team-name">Priya Nair</div>
+        <div class="team-role">Cybersecurity Specialist</div>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.8rem;">Certified ethical hacker and penetration tester. Writes all security content on the platform.</p>
+      </div>
+      <div class="team-card glass-card">
+        <div class="team-avatar">👨‍☁️</div>
+        <div class="team-name">Kabir Singh</div>
+        <div class="team-role">Cloud Architect</div>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.8rem;">AWS & Azure certified. Leads cloud content and infrastructure for the platform itself.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== TIMELINE ====================== -->
+  <section class="section">
+    <div class="neon-label">Our Journey</div>
+    <h2 class="section-title">How We <span>Evolved</span></h2>
+    <div style="max-width:700px;margin:0 auto;">
+      <div style="display:flex;flex-direction:column;gap:0;">
+
+        <!-- Timeline item -->
+        <div style="display:flex;gap:1.5rem;padding-bottom:2rem;position:relative;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
+            <div style="width:14px;height:14px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan);flex-shrink:0;"></div>
+            <div style="width:1px;flex:1;background:linear-gradient(to bottom,var(--cyan),transparent);margin-top:4px;"></div>
+          </div>
+          <div class="glass-card" style="padding:1.4rem;flex:1;">
+            <div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--cyan);letter-spacing:2px;margin-bottom:0.3rem;">2023 — FOUNDED</div>
+            <div style="font-family:var(--font-display);font-size:0.9rem;margin-bottom:0.4rem;">The Idea Sparks</div>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">Tech Explorer began as a side project — a simple blog to share notes on AI and web development.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:1.5rem;padding-bottom:2rem;position:relative;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
+            <div style="width:14px;height:14px;border-radius:50%;background:var(--purple);box-shadow:0 0 14px var(--purple);flex-shrink:0;"></div>
+            <div style="width:1px;flex:1;background:linear-gradient(to bottom,var(--purple),transparent);margin-top:4px;"></div>
+          </div>
+          <div class="glass-card" style="padding:1.4rem;flex:1;">
+            <div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--purple);letter-spacing:2px;margin-bottom:0.3rem;">2024 — EXPANSION</div>
+            <div style="font-family:var(--font-display);font-size:0.9rem;margin-bottom:0.4rem;">Platform Launch</div>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">We expanded into a full multi-topic platform with dedicated sections for Cybersecurity and Cloud Computing.</p>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:1.5rem;">
+          <div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;">
+            <div style="width:14px;height:14px;border-radius:50%;background:var(--pink);box-shadow:0 0 14px var(--pink);flex-shrink:0;"></div>
+          </div>
+          <div class="glass-card" style="padding:1.4rem;flex:1;">
+            <div style="font-family:var(--font-mono);font-size:0.68rem;color:var(--pink);letter-spacing:2px;margin-bottom:0.3rem;">2025 — NOW</div>
+            <div style="font-family:var(--font-display);font-size:0.9rem;margin-bottom:0.4rem;">Growing Community</div>
+            <p style="font-size:0.88rem;color:var(--text-muted);margin:0;">A thriving community of thousands of tech learners, with new content added every week.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== CTA ====================== -->
+  <section class="section" style="text-align:center;padding-top:2rem;">
+    <div class="featured-banner" style="flex-direction:column;text-align:center;align-items:center;">
+      <div style="font-size:2.5rem;">🌟</div>
+      <h3 style="font-family:var(--font-display);font-size:1.3rem;letter-spacing:1.5px;margin-bottom:0.5rem;">Ready to Start Exploring?</h3>
+      <p style="color:var(--text-muted);max-width:450px;">Choose a technology topic and begin your learning journey today. No signup required.</p>
+      <div style="display:flex;gap:1rem;margin-top:1.2rem;flex-wrap:wrap;justify-content:center;">
+        <a href="topics.html" class="btn btn-primary">Browse All Topics</a>
+        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">⬡ TechExplorer</a>
+        <p>Your premium hub for exploring modern technologies. Designed for students, developers, and curious minds worldwide.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Twitter">𝕏</a>
+          <a href="#" class="social-link" title="GitHub">⌨</a>
+          <a href="#" class="social-link" title="LinkedIn">in</a>
+          <a href="#" class="social-link" title="YouTube">▶</a>
+          <a href="#" class="social-link" title="Discord">◈</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="topics.html">Topics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="topic-ai.html">Artificial Intelligence</a></li>
+          <li><a href="topic-webdev.html">Web Development</a></li>
+          <li><a href="topic-cybersecurity.html">Cyber Security</a></li>
+          <li><a href="topic-cloud.html">Cloud Computing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <a href="index.html">TechExplorer</a>. Crafted with ❤️ for learners everywhere.</p>
+      <p>Built with HTML & CSS — No JavaScript Required</p>
+    </div>
+  </footer>
+
+</body>
+</html>

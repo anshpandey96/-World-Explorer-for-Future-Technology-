@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Tech Explorer</title>
+  <meta name="description" content="Get in touch with Tech Explorer — send us a message, suggest a topic, or collaborate with us." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">⬡ Tech<span>Explorer</span></a>
+    <button class="hamburger" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="topics.html">Topics</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====================== PAGE HEADER ====================== -->
+  <header class="page-header">
+    <div class="neon-label">Say Hello</div>
+    <h1 class="page-header-title">Get In <span class="text-cyan">Touch</span></h1>
+    <p class="page-header-sub">Questions, topic suggestions, collaborations, or just a friendly hello — we'd love to hear from you.</p>
+  </header>
+
+  <!-- ====================== CONTACT SECTION ====================== -->
+  <section class="section">
+    <div class="contact-grid">
+
+      <!-- Left: Info -->
+      <div>
+        <h3 class="contact-info">Contact Information</h3>
+
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:0.78rem;letter-spacing:1px;margin-bottom:0.2rem;">Email</div>
+            <div>hello@techexplorer.dev</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">🌍</div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:0.78rem;letter-spacing:1px;margin-bottom:0.2rem;">Website</div>
+            <div>www.techexplorer.dev</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:0.78rem;letter-spacing:1px;margin-bottom:0.2rem;">Location</div>
+            <div>Bangalore, India — Remote Worldwide</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">⏰</div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:0.78rem;letter-spacing:1px;margin-bottom:0.2rem;">Response Time</div>
+            <div>Usually within 24–48 hours</div>
+          </div>
+        </div>
+
+        <hr class="glow-divider" style="margin:1.5rem 0;" />
+
+        <!-- Social Links -->
+        <div style="font-family:var(--font-display);font-size:0.78rem;letter-spacing:2px;color:var(--text-muted);text-transform:uppercase;margin-bottom:1rem;">Follow Us</div>
+        <div style="display:flex;flex-direction:column;gap:0.6rem;">
+          <a href="#" style="display:flex;align-items:center;gap:0.8rem;text-decoration:none;color:var(--text-muted);font-size:0.9rem;padding:0.6rem 1rem;border-radius:var(--radius-sm);border:1px solid rgba(0,240,255,0.08);transition:all 0.3s;" onmouseover="this.style.borderColor='var(--cyan)';this.style.color='var(--cyan)';this.style.background='var(--cyan-dim)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.08)';this.style.color='var(--text-muted)';this.style.background='transparent'">
+            <span style="font-size:1.1rem;">𝕏</span> Twitter / X
+          </a>
+          <a href="#" style="display:flex;align-items:center;gap:0.8rem;text-decoration:none;color:var(--text-muted);font-size:0.9rem;padding:0.6rem 1rem;border-radius:var(--radius-sm);border:1px solid rgba(0,240,255,0.08);transition:all 0.3s;" onmouseover="this.style.borderColor='var(--cyan)';this.style.color='var(--cyan)';this.style.background='var(--cyan-dim)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.08)';this.style.color='var(--text-muted)';this.style.background='transparent'">
+            <span style="font-size:1.1rem;">⌨</span> GitHub
+          </a>
+          <a href="#" style="display:flex;align-items:center;gap:0.8rem;text-decoration:none;color:var(--text-muted);font-size:0.9rem;padding:0.6rem 1rem;border-radius:var(--radius-sm);border:1px solid rgba(0,240,255,0.08);transition:all 0.3s;" onmouseover="this.style.borderColor='var(--cyan)';this.style.color='var(--cyan)';this.style.background='var(--cyan-dim)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.08)';this.style.color='var(--text-muted)';this.style.background='transparent'">
+            <span style="font-size:1.1rem;">in</span> LinkedIn
+          </a>
+          <a href="#" style="display:flex;align-items:center;gap:0.8rem;text-decoration:none;color:var(--text-muted);font-size:0.9rem;padding:0.6rem 1rem;border-radius:var(--radius-sm);border:1px solid rgba(0,240,255,0.08);transition:all 0.3s;" onmouseover="this.style.borderColor='var(--cyan)';this.style.color='var(--cyan)';this.style.background='var(--cyan-dim)'" onmouseout="this.style.borderColor='rgba(0,240,255,0.08)';this.style.color='var(--text-muted)';this.style.background='transparent'">
+            <span style="font-size:1.1rem;">▶</span> YouTube
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="glass-card" style="padding:2.5rem;">
+        <div style="font-family:var(--font-display);font-size:0.78rem;letter-spacing:2px;color:var(--cyan);margin-bottom:1.5rem;">SEND A MESSAGE</div>
+
+        <!--
+          Note: This form uses pure HTML/CSS.
+          To make it functional, connect it to a backend
+          (e.g., Formspree, Netlify Forms, or your own server).
+          Action URL can be added to the form element.
+        -->
+        <form class="contact-form" action="#" method="POST">
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first_name" placeholder="Your first name" required />
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last_name" placeholder="Your last name" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="" disabled selected>Select a topic...</option>
+              <option value="general">General Enquiry</option>
+              <option value="topic-suggest">Suggest a Topic</option>
+              <option value="collaboration">Collaboration / Partnership</option>
+              <option value="feedback">Content Feedback</option>
+              <option value="bug">Report an Issue</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <!-- Honeypot field (spam prevention - CSS hidden) -->
+          <div style="display:none;">
+            <input type="text" name="website" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;font-size:0.82rem;">
+            🚀 Send Message
+          </button>
+
+          <p style="font-family:var(--font-mono);font-size:0.65rem;color:var(--text-muted);text-align:center;margin-top:1rem;letter-spacing:1px;">
+            We respect your privacy. No spam, ever.
+          </p>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================== FAQ ====================== -->
+  <section class="section" style="padding-top:0;">
+    <div class="neon-label">Common Questions</div>
+    <h2 class="section-title">Frequently <span>Asked</span></h2>
+    <div style="max-width:750px;margin:0 auto;display:flex;flex-direction:column;gap:1rem;">
+
+      <details class="glass-card" style="padding:1.5rem;cursor:pointer;" open>
+        <summary style="font-family:var(--font-display);font-size:0.88rem;letter-spacing:1px;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--text-primary);">
+          Is all the content on Tech Explorer free?
+          <span style="color:var(--cyan);font-size:1rem;">+</span>
+        </summary>
+        <p style="color:var(--text-muted);font-size:0.9rem;margin-top:1rem;margin-bottom:0;border-top:1px solid rgba(0,240,255,0.08);padding-top:1rem;">Yes — 100%. Tech Explorer is and will always remain completely free. No paywalls, no subscriptions, no hidden fees. Knowledge should be open to everyone.</p>
+      </details>
+
+      <details class="glass-card" style="padding:1.5rem;cursor:pointer;">
+        <summary style="font-family:var(--font-display);font-size:0.88rem;letter-spacing:1px;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--text-primary);">
+          Can I suggest a new technology topic?
+          <span style="color:var(--cyan);font-size:1rem;">+</span>
+        </summary>
+        <p style="color:var(--text-muted);font-size:0.9rem;margin-top:1rem;margin-bottom:0;border-top:1px solid rgba(0,240,255,0.08);padding-top:1rem;">Absolutely! Use the contact form above and select "Suggest a Topic". We review all suggestions and prioritise based on community interest. If enough people request a topic, we'll create it.</p>
+      </details>
+
+      <details class="glass-card" style="padding:1.5rem;cursor:pointer;">
+        <summary style="font-family:var(--font-display);font-size:0.88rem;letter-spacing:1px;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--text-primary);">
+          Can I collaborate or contribute content?
+          <span style="color:var(--cyan);font-size:1rem;">+</span>
+        </summary>
+        <p style="color:var(--text-muted);font-size:0.9rem;margin-top:1rem;margin-bottom:0;border-top:1px solid rgba(0,240,255,0.08);padding-top:1rem;">Yes! We welcome contributions from industry professionals and educators. Select "Collaboration / Partnership" in the contact form and tell us about your expertise and what you'd like to write about.</p>
+      </details>
+
+      <details class="glass-card" style="padding:1.5rem;cursor:pointer;">
+        <summary style="font-family:var(--font-display);font-size:0.88rem;letter-spacing:1px;list-style:none;display:flex;justify-content:space-between;align-items:center;color:var(--text-primary);">
+          Is this site suitable for college projects and portfolios?
+          <span style="color:var(--cyan);font-size:1rem;">+</span>
+        </summary>
+        <p style="color:var(--text-muted);font-size:0.9rem;margin-top:1rem;margin-bottom:0;border-top:1px solid rgba(0,240,255,0.08);padding-top:1rem;">Tech Explorer itself was built as a college-level portfolio project — showcasing advanced HTML and CSS techniques. You're welcome to use it as inspiration. If you reference us, a credit would be appreciated.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">⬡ TechExplorer</a>
+        <p>Your premium hub for exploring modern technologies. Designed for students, developers, and curious minds worldwide.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Twitter">𝕏</a>
+          <a href="#" class="social-link" title="GitHub">⌨</a>
+          <a href="#" class="social-link" title="LinkedIn">in</a>
+          <a href="#" class="social-link" title="YouTube">▶</a>
+          <a href="#" class="social-link" title="Discord">◈</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="topics.html">Topics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="topic-ai.html">Artificial Intelligence</a></li>
+          <li><a href="topic-webdev.html">Web Development</a></li>
+          <li><a href="topic-cybersecurity.html">Cyber Security</a></li>
+          <li><a href="topic-cloud.html">Cloud Computing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <a href="index.html">TechExplorer</a>. Crafted with ❤️ for learners everywhere.</p>
+      <p>Built with HTML & CSS — No JavaScript Required</p>
+    </div>
+  </footer>
+
+</body>
+</html>

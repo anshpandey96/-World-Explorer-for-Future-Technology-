@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Computing — Tech Explorer</title>
+  <meta name="description" content="Learn Cloud Computing — AWS, Azure, Google Cloud, serverless, containers, Kubernetes, and scalable infrastructure." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .topic-page-title { color: #00c6ff; text-shadow: 0 0 30px #00c6ff; }
+    .topic-icon-large { filter: drop-shadow(0 0 20px #00c6ff); }
+    .topic-header::before { background: radial-gradient(ellipse at center, rgba(0,198,255,0.06) 0%, transparent 70%); }
+    .key-points-card h3 { color: #00c6ff; }
+    .key-points-list li::before { color: #00c6ff; }
+    .info-badge { background: rgba(0,198,255,0.1); color: #00c6ff; border-color: rgba(0,198,255,0.25); }
+    .progress-bar-fill { background: linear-gradient(90deg, #00c6ff, #0072ff); box-shadow: 0 0 10px #00c6ff; }
+    .neon-label { color: #00c6ff; }
+    .neon-label::before { background: linear-gradient(90deg, transparent, #00c6ff); }
+    .neon-label::after  { background: linear-gradient(90deg, #00c6ff, transparent); }
+  </style>
+</head>
+<body>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">⬡ Tech<span>Explorer</span></a>
+    <button class="hamburger" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="topics.html" class="active">Topics</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====================== TOPIC HEADER ====================== -->
+  <header class="topic-header">
+    <span class="topic-icon-large">☁️</span>
+    <div class="neon-label">Deep Dive</div>
+    <h1 class="topic-page-title">Cloud Computing</h1>
+    <p class="topic-tagline">Infinite scale, on demand — the infrastructure powering our digital world</p>
+    <div style="display:flex;gap:0.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;">
+      <span class="info-badge">AWS</span>
+      <span class="info-badge">Azure</span>
+      <span class="info-badge">Google Cloud</span>
+      <span class="info-badge">Kubernetes</span>
+      <span class="info-badge">Serverless</span>
+    </div>
+  </header>
+
+  <!-- ====================== CONTENT ====================== -->
+  <div class="topic-content-wrapper">
+
+    <!-- Main Body -->
+    <main class="topic-body">
+
+      <h3>What is Cloud Computing?</h3>
+      <p>
+        Cloud computing is the delivery of computing services — servers, storage, databases, networking, software, analytics, and intelligence — over the internet ("the cloud") to offer faster innovation, flexible resources, and economies of scale. Instead of owning and maintaining physical data centres and servers, organisations can access computing resources on an on-demand, pay-as-you-go basis from cloud providers.
+      </p>
+      <p>
+        The cloud model fundamentally changed how software is built, deployed, and consumed. A startup today can launch a globally distributed application in hours, with infrastructure that automatically scales to millions of users, without ever purchasing a single server. This democratisation of infrastructure has been one of the most transformative forces in modern business.
+      </p>
+
+      <h3>Cloud Service Models</h3>
+      <p>
+        Cloud computing is delivered in three primary service models. <strong style="color:var(--text-primary);">Infrastructure as a Service (IaaS)</strong> provides virtualised computing resources — virtual machines, storage, networking — giving maximum control over the infrastructure layer. AWS EC2, Azure Virtual Machines, and Google Compute Engine are classic IaaS offerings.
+      </p>
+      <p>
+        <strong style="color:var(--text-primary);">Platform as a Service (PaaS)</strong> provides a managed environment for developers to build, test, and deploy applications without managing the underlying infrastructure. Heroku, Google App Engine, and Azure App Service fall into this category. <strong style="color:var(--text-primary);">Software as a Service (SaaS)</strong> delivers complete, ready-to-use applications over the internet — Gmail, Salesforce, Slack, and Microsoft 365 are familiar examples.
+      </p>
+
+      <h3>The Major Cloud Providers</h3>
+      <p>
+        <strong style="color:var(--text-primary);">Amazon Web Services (AWS)</strong> launched in 2006 and remains the largest cloud provider by market share, offering over 200 services spanning compute, storage, AI/ML, databases, IoT, and more. <strong style="color:var(--text-primary);">Microsoft Azure</strong> is a strong second, particularly dominant in enterprise environments due to its deep integration with Microsoft's existing ecosystem (Active Directory, Office 365, Visual Studio). <strong style="color:var(--text-primary);">Google Cloud Platform (GCP)</strong> is the third major player, with particular strengths in data analytics, machine learning (leveraging Google's proprietary TPU hardware), and Kubernetes (which Google originally created).
+      </p>
+
+      <h3>Containerisation and Kubernetes</h3>
+      <p>
+        <strong style="color:var(--text-primary);">Containers</strong> (popularised by Docker) package an application and all its dependencies into a single, portable unit that runs consistently across any environment. This solved the infamous "it works on my machine" problem and enabled entirely new deployment patterns. Containers are lightweight, start instantly, and can be run thousands at a time on a single host.
+      </p>
+      <p>
+        <strong style="color:var(--text-primary);">Kubernetes (K8s)</strong>, originally developed by Google and now maintained by the CNCF, is the industry-standard platform for orchestrating containers at scale. It automates deployment, scaling, self-healing, load balancing, and rolling updates — making it the de-facto operating system for cloud-native applications.
+      </p>
+
+      <h3>Serverless Computing</h3>
+      <p>
+        Serverless computing takes abstraction to its logical extreme. Developers write individual functions that are triggered by events — an HTTP request, a file upload, a database change — without managing any servers whatsoever. AWS Lambda, Azure Functions, and Google Cloud Functions are the dominant platforms. Serverless enables extreme cost efficiency (you pay only for actual execution time, to the millisecond) and scales automatically from zero to global scale.
+      </p>
+
+      <h3>Cloud Security and Compliance</h3>
+      <p>
+        The shared responsibility model defines how security works in the cloud: the provider is responsible for the security <em style="color:var(--text-primary);">of</em> the cloud (physical data centres, hardware, networking), while the customer is responsible for security <em style="color:var(--text-primary);">in</em> the cloud (their data, identity management, application configuration). Misconfiguration remains the leading cause of cloud security incidents — making DevSecOps and Infrastructure as Code (Terraform, Pulumi) critical practices.
+      </p>
+
+      <div class="glass-card" style="padding:1.8rem;margin-top:2rem;border-left:3px solid #00c6ff;">
+        <div style="font-family:var(--font-mono);font-size:0.7rem;color:#00c6ff;letter-spacing:2px;margin-bottom:0.5rem;">INDUSTRY INSIGHT</div>
+        <p style="margin:0;font-style:italic;color:var(--text-muted);">By 2026, over 80% of enterprises will run their workloads primarily in the cloud. Cloud skills — particularly in Kubernetes, Infrastructure as Code, and multi-cloud architecture — are among the most sought-after and highest-paid in the technology industry.</p>
+      </div>
+
+      <hr class="glow-divider" />
+
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="index.html" class="btn btn-back">← Back to Home</a>
+        <a href="topics.html" class="btn btn-outline">All Topics</a>
+        <a href="topic-ai.html" class="btn btn-primary" style="background:linear-gradient(135deg,#00c6ff,#0072ff);">Back to AI →</a>
+      </div>
+
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="topic-sidebar">
+
+      <div class="glass-card key-points-card">
+        <h3>⚡ Key Points</h3>
+        <ul class="key-points-list">
+          <li>Cloud delivers compute, storage, and networking on-demand over the internet</li>
+          <li>Three service models: IaaS, PaaS, and SaaS</li>
+          <li>AWS, Azure, and GCP are the three dominant cloud providers</li>
+          <li>Containers (Docker) package apps for consistent deployment anywhere</li>
+          <li>Kubernetes orchestrates containers at scale across clusters</li>
+          <li>Serverless removes all server management — pay per execution</li>
+          <li>Multi-cloud strategies avoid vendor lock-in and increase resilience</li>
+          <li>Shared responsibility model defines cloud security boundaries</li>
+        </ul>
+      </div>
+
+      <div class="glass-card info-card">
+        <h4>Difficulty Level</h4>
+        <span class="info-badge">Intermediate – Advanced</span>
+        <div class="progress-bar-wrap" style="margin-top:0.8rem;">
+          <div class="progress-bar-fill" style="width:80%;"></div>
+        </div>
+        <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.5rem;margin-bottom:0;">Hands-on practice strongly recommended</p>
+      </div>
+
+      <div class="glass-card info-card">
+        <h4>Related Topics</h4>
+        <div>
+          <a href="topic-ai.html" style="display:flex;align-items:center;gap:8px;padding:0.5rem 0;text-decoration:none;color:var(--text-muted);font-size:0.88rem;border-bottom:1px solid rgba(0,240,255,0.06);transition:color 0.3s;" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--text-muted)'">🤖 Artificial Intelligence</a>
+          <a href="topic-cybersecurity.html" style="display:flex;align-items:center;gap:8px;padding:0.5rem 0;text-decoration:none;color:var(--text-muted);font-size:0.88rem;border-bottom:1px solid rgba(0,240,255,0.06);transition:color 0.3s;" onmouseover="this.style.color='var(--pink)'" onmouseout="this.style.color='var(--text-muted)'">🔐 Cyber Security</a>
+          <a href="topic-webdev.html" style="display:flex;align-items:center;gap:8px;padding:0.5rem 0;text-decoration:none;color:var(--text-muted);font-size:0.88rem;transition:color 0.3s;" onmouseover="this.style.color='#ff7b00'" onmouseout="this.style.color='var(--text-muted)'">🌐 Web Development</a>
+        </div>
+      </div>
+
+      <div class="glass-card info-card">
+        <h4>Certifications & Tools</h4>
+        <div>
+          <span class="info-badge">AWS SAA</span>
+          <span class="info-badge">AZ-900</span>
+          <span class="info-badge">GCP ACE</span>
+          <span class="info-badge">Docker</span>
+          <span class="info-badge">Kubernetes</span>
+          <span class="info-badge">Terraform</span>
+          <span class="info-badge">Helm</span>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">⬡ TechExplorer</a>
+        <p>Your premium hub for exploring modern technologies.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">𝕏</a>
+          <a href="#" class="social-link">⌨</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">▶</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Topics</h4><ul>
+        <li><a href="topic-ai.html">Artificial Intelligence</a></li>
+        <li><a href="topic-webdev.html">Web Development</a></li>
+        <li><a href="topic-cybersecurity.html">Cyber Security</a></li>
+        <li><a href="topic-cloud.html">Cloud Computing</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Pages</h4><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="topics.html">Topics</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <a href="index.html">TechExplorer</a>. Crafted with ❤️</p>
+      <p>Built with HTML & CSS — No JavaScript Required</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Explorer — Learn Modern Technologies</title>
+  <meta name="description" content="Explore the world of modern technology with in-depth articles on AI, Web Development, Cybersecurity, and Cloud Computing." />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Google Fonts loaded via CSS @import -->
+</head>
+<body>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">⬡ Tech<span>Explorer</span></a>
+    <button class="hamburger" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="topics.html">Topics</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====================== HERO ====================== -->
+  <section class="hero">
+    <div style="position:relative;z-index:1;max-width:800px;">
+      <div class="hero-badge">✦ Your Gateway to Modern Technology</div>
+      <h1 class="hero-title">
+        Explore the World of<br>
+        <span class="highlight">Future Technology</span>
+      </h1>
+      <p class="hero-description">
+        Dive deep into AI, Web Development, Cybersecurity, Cloud Computing, and more.
+        Premium knowledge, curated for the next generation of tech innovators.
+      </p>
+      <div class="hero-buttons">
+        <a href="topics.html" class="btn btn-primary">🚀 Explore Topics</a>
+        <a href="about.html" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">Scroll</div>
+  </section>
+
+  <!-- ====================== STATS ====================== -->
+  <div class="stats-bar">
+    <div class="stat-item">
+      <span class="stat-number">4+</span>
+      <span class="stat-label">Tech Topics</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">50+</span>
+      <span class="stat-label">Key Concepts</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">100%</span>
+      <span class="stat-label">Free Content</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">∞</span>
+      <span class="stat-label">Learning Potential</span>
+    </div>
+  </div>
+
+  <!-- ====================== FEATURED TOPICS ====================== -->
+  <section class="section">
+    <div class="neon-label">Featured Topics</div>
+    <h2 class="section-title">Explore <span>Core Technologies</span></h2>
+    <p class="section-subtitle">Hand-picked topics to accelerate your tech journey</p>
+
+    <div class="topics-grid">
+
+      <!-- AI Card -->
+      <a href="topic-ai.html" class="topic-card glass-card" style="--card-accent: linear-gradient(90deg,#00f0ff,#b94dff); --icon-bg: rgba(0,240,255,0.1); --icon-border: rgba(0,240,255,0.25);">
+        <div class="card-icon">🤖</div>
+        <span class="card-tag">HOT TOPIC</span>
+        <div class="card-title">Artificial Intelligence</div>
+        <p class="card-excerpt">From machine learning to neural networks — discover how AI is reshaping every industry on the planet.</p>
+        <span class="card-link">Read More →</span>
+      </a>
+
+      <!-- Web Dev Card -->
+      <a href="topic-webdev.html" class="topic-card glass-card" style="--card-accent: linear-gradient(90deg,#ff7b00,#ff2d7a); --icon-bg: rgba(255,123,0,0.1); --icon-border: rgba(255,123,0,0.25);">
+        <div class="card-icon" style="background:rgba(255,123,0,0.1);border-color:rgba(255,123,0,0.25);">🌐</div>
+        <span class="card-tag" style="background:rgba(255,123,0,0.1);color:#ff7b00;border-color:rgba(255,123,0,0.25);">POPULAR</span>
+        <div class="card-title">Web Development</div>
+        <p class="card-excerpt">HTML, CSS, JavaScript, React, APIs — master the full stack and build the websites of tomorrow.</p>
+        <span class="card-link" style="color:#ff7b00;">Read More →</span>
+      </a>
+
+      <!-- Cyber Security Card -->
+      <a href="topic-cybersecurity.html" class="topic-card glass-card" style="--card-accent: linear-gradient(90deg,#ff2d7a,#b94dff); --icon-bg: rgba(255,45,122,0.1); --icon-border: rgba(255,45,122,0.25);">
+        <div class="card-icon" style="background:rgba(255,45,122,0.1);border-color:rgba(255,45,122,0.25);">🔐</div>
+        <span class="card-tag" style="background:rgba(255,45,122,0.1);color:#ff2d7a;border-color:rgba(255,45,122,0.25);">CRITICAL</span>
+        <div class="card-title">Cyber Security</div>
+        <p class="card-excerpt">Protect the digital world. Learn ethical hacking, encryption, firewalls, and modern defence strategies.</p>
+        <span class="card-link" style="color:#ff2d7a;">Read More →</span>
+      </a>
+
+      <!-- Cloud Computing Card -->
+      <a href="topic-cloud.html" class="topic-card glass-card" style="--card-accent: linear-gradient(90deg,#00c6ff,#0072ff); --icon-bg: rgba(0,198,255,0.1); --icon-border: rgba(0,198,255,0.25);">
+        <div class="card-icon" style="background:rgba(0,198,255,0.1);border-color:rgba(0,198,255,0.25);">☁️</div>
+        <span class="card-tag" style="background:rgba(0,198,255,0.1);color:#00c6ff;border-color:rgba(0,198,255,0.25);">TRENDING</span>
+        <div class="card-title">Cloud Computing</div>
+        <p class="card-excerpt">AWS, Azure, Google Cloud — understand scalable infrastructure and how the world runs in the cloud.</p>
+        <span class="card-link" style="color:#00c6ff;">Read More →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ====================== FEATURED BANNER ====================== -->
+  <section class="section" style="padding-top:0;">
+    <div class="featured-banner">
+      <div class="banner-icon">⚡</div>
+      <div class="banner-text">
+        <h3>Start Your Tech Journey Today</h3>
+        <p>All topics are free, well-researched, and beginner-to-advanced friendly.</p>
+        <div class="progress-bar-wrap" style="width:300px;max-width:100%;">
+          <div class="progress-bar-fill" style="width:75%;"></div>
+        </div>
+      </div>
+      <div class="banner-cta">
+        <a href="topics.html" class="btn btn-primary">View All Topics</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== WHY SECTION ====================== -->
+  <section class="section" style="background: rgba(0,240,255,0.02);">
+    <div class="neon-label">Why Tech Explorer</div>
+    <h2 class="section-title">Built for <span>Real Learners</span></h2>
+    <p class="section-subtitle">We make complex tech topics easy to understand</p>
+    <div class="topics-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px,1fr));">
+      <div class="glass-card" style="padding:2rem;text-align:center;">
+        <div style="font-size:2.2rem;margin-bottom:1rem;">📚</div>
+        <div class="card-title" style="text-align:center;margin-bottom:0.5rem;">Curated Content</div>
+        <p class="card-excerpt" style="text-align:center;margin-bottom:0;">Expertly written explanations that go from basics to advanced.</p>
+      </div>
+      <div class="glass-card" style="padding:2rem;text-align:center;">
+        <div style="font-size:2.2rem;margin-bottom:1rem;">🎯</div>
+        <div class="card-title" style="text-align:center;margin-bottom:0.5rem;">Focused Learning</div>
+        <p class="card-excerpt" style="text-align:center;margin-bottom:0;">No fluff. Just the key concepts that matter most in 2025.</p>
+      </div>
+      <div class="glass-card" style="padding:2rem;text-align:center;">
+        <div style="font-size:2.2rem;margin-bottom:1rem;">💡</div>
+        <div class="card-title" style="text-align:center;margin-bottom:0.5rem;">Practical Insights</div>
+        <p class="card-excerpt" style="text-align:center;margin-bottom:0;">Real-world applications tied to industry and career growth.</p>
+      </div>
+      <div class="glass-card" style="padding:2rem;text-align:center;">
+        <div style="font-size:2.2rem;margin-bottom:1rem;">🔓</div>
+        <div class="card-title" style="text-align:center;margin-bottom:0.5rem;">100% Free Access</div>
+        <p class="card-excerpt" style="text-align:center;margin-bottom:0;">No paywalls, no accounts needed. Open knowledge for all.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">⬡ TechExplorer</a>
+        <p>Your premium hub for exploring modern technologies. Designed for students, developers, and curious minds worldwide.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Twitter">𝕏</a>
+          <a href="#" class="social-link" title="GitHub">⌨</a>
+          <a href="#" class="social-link" title="LinkedIn">in</a>
+          <a href="#" class="social-link" title="YouTube">▶</a>
+          <a href="#" class="social-link" title="Discord">◈</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="topics.html">Topics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="topic-ai.html">Artificial Intelligence</a></li>
+          <li><a href="topic-webdev.html">Web Development</a></li>
+          <li><a href="topic-cybersecurity.html">Cyber Security</a></li>
+          <li><a href="topic-cloud.html">Cloud Computing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <a href="index.html">TechExplorer</a>. Crafted with ❤️ for learners everywhere.</p>
+      <p>Built with HTML & CSS — No JavaScript Required</p>
+    </div>
+  </footer>
+
+</body>
+</html>

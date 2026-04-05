@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Topics — Tech Explorer</title>
+  <meta name="description" content="Browse all technology topics on Tech Explorer — AI, Web Development, Cyber Security, Cloud Computing and more." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">⬡ Tech<span>Explorer</span></a>
+    <button class="hamburger" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="topics.html" class="active">Topics</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====================== PAGE HEADER ====================== -->
+  <header class="page-header">
+    <div class="neon-label">All Technology Topics</div>
+    <h1 class="page-header-title">Explore <span class="text-cyan">Every Topic</span></h1>
+    <p class="page-header-sub">Carefully curated technology topics for every level of learner</p>
+  </header>
+
+  <!-- ====================== MAIN TOPICS ====================== -->
+  <section class="section">
+    <div class="neon-label">Core Technologies</div>
+    <h2 class="section-title">Primary <span>Topics</span></h2>
+    <p class="section-subtitle">Click on any topic to read the full article</p>
+
+    <!-- Topic Cards — Large Format -->
+    <div style="display:flex;flex-direction:column;gap:1.8rem;">
+
+      <!-- AI -->
+      <a href="topic-ai.html" class="glass-card" style="display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem;padding:2rem 2.5rem;text-decoration:none;color:inherit;">
+        <div style="width:72px;height:72px;border-radius:16px;background:rgba(0,240,255,0.1);border:1px solid rgba(0,240,255,0.25);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;transition:transform 0.35s ease;">🤖</div>
+        <div>
+          <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:0.5rem;">
+            <div class="card-title" style="margin-bottom:0;">Artificial Intelligence</div>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:1.5px;padding:0.2rem 0.7rem;border-radius:50px;background:rgba(0,240,255,0.1);color:var(--cyan);border:1px solid rgba(0,240,255,0.2);">HOT TOPIC</span>
+          </div>
+          <p style="color:var(--text-muted);font-size:0.92rem;margin:0;max-width:600px;">From machine learning to neural networks, generative AI to robotics — explore how artificial intelligence is fundamentally transforming every industry on the planet.</p>
+          <div style="display:flex;gap:0.5rem;margin-top:0.8rem;flex-wrap:wrap;">
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">Machine Learning</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">Neural Networks</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">NLP</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">Computer Vision</span>
+          </div>
+        </div>
+        <span class="card-link" style="flex-shrink:0;white-space:nowrap;">Read More →</span>
+      </a>
+
+      <!-- Web Dev -->
+      <a href="topic-webdev.html" class="glass-card" style="display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem;padding:2rem 2.5rem;text-decoration:none;color:inherit;border-top:3px solid #ff7b00;">
+        <div style="width:72px;height:72px;border-radius:16px;background:rgba(255,123,0,0.1);border:1px solid rgba(255,123,0,0.25);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;">🌐</div>
+        <div>
+          <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:0.5rem;">
+            <div class="card-title" style="margin-bottom:0;">Web Development</div>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:1.5px;padding:0.2rem 0.7rem;border-radius:50px;background:rgba(255,123,0,0.1);color:#ff7b00;border:1px solid rgba(255,123,0,0.2);">POPULAR</span>
+          </div>
+          <p style="color:var(--text-muted);font-size:0.92rem;margin:0;max-width:600px;">HTML, CSS, JavaScript, React, Node.js, REST APIs — master the complete full-stack toolkit and build the modern websites and web applications of tomorrow.</p>
+          <div style="display:flex;gap:0.5rem;margin-top:0.8rem;flex-wrap:wrap;">
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">HTML/CSS</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">JavaScript</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">React</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">REST APIs</span>
+          </div>
+        </div>
+        <span class="card-link" style="flex-shrink:0;white-space:nowrap;color:#ff7b00;">Read More →</span>
+      </a>
+
+      <!-- Cybersecurity -->
+      <a href="topic-cybersecurity.html" class="glass-card" style="display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem;padding:2rem 2.5rem;text-decoration:none;color:inherit;border-top:3px solid #ff2d7a;">
+        <div style="width:72px;height:72px;border-radius:16px;background:rgba(255,45,122,0.1);border:1px solid rgba(255,45,122,0.25);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;">🔐</div>
+        <div>
+          <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:0.5rem;">
+            <div class="card-title" style="margin-bottom:0;">Cyber Security</div>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:1.5px;padding:0.2rem 0.7rem;border-radius:50px;background:rgba(255,45,122,0.1);color:#ff2d7a;border:1px solid rgba(255,45,122,0.2);">CRITICAL</span>
+          </div>
+          <p style="color:var(--text-muted);font-size:0.92rem;margin:0;max-width:600px;">Protect the digital world. Learn ethical hacking, encryption, firewalls, threat detection, penetration testing, and the modern strategies organisations use to defend their data.</p>
+          <div style="display:flex;gap:0.5rem;margin-top:0.8rem;flex-wrap:wrap;">
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">Ethical Hacking</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">Encryption</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">Firewalls</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">Zero Trust</span>
+          </div>
+        </div>
+        <span class="card-link" style="flex-shrink:0;white-space:nowrap;color:#ff2d7a;">Read More →</span>
+      </a>
+
+      <!-- Cloud Computing -->
+      <a href="topic-cloud.html" class="glass-card" style="display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem;padding:2rem 2.5rem;text-decoration:none;color:inherit;border-top:3px solid #00c6ff;">
+        <div style="width:72px;height:72px;border-radius:16px;background:rgba(0,198,255,0.1);border:1px solid rgba(0,198,255,0.25);display:flex;align-items:center;justify-content:center;font-size:2rem;flex-shrink:0;">☁️</div>
+        <div>
+          <div style="display:flex;align-items:center;gap:0.8rem;margin-bottom:0.5rem;">
+            <div class="card-title" style="margin-bottom:0;">Cloud Computing</div>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;letter-spacing:1.5px;padding:0.2rem 0.7rem;border-radius:50px;background:rgba(0,198,255,0.1);color:#00c6ff;border:1px solid rgba(0,198,255,0.2);">TRENDING</span>
+          </div>
+          <p style="color:var(--text-muted);font-size:0.92rem;margin:0;max-width:600px;">AWS, Azure, Google Cloud, serverless functions, containers, Kubernetes — understand the scalable infrastructure that powers the modern internet and global enterprise.</p>
+          <div style="display:flex;gap:0.5rem;margin-top:0.8rem;flex-wrap:wrap;">
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">AWS</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">Azure</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">Kubernetes</span>
+            <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.15rem 0.6rem;">Serverless</span>
+          </div>
+        </div>
+        <span class="card-link" style="flex-shrink:0;white-space:nowrap;color:#00c6ff;">Read More →</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ====================== COMING SOON ====================== -->
+  <section class="section" style="padding-top:0;">
+    <div class="neon-label">Coming Soon</div>
+    <h2 class="section-title">More Topics <span>On The Way</span></h2>
+    <p class="section-subtitle">These topics are currently in development</p>
+
+    <div class="topics-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px,1fr));">
+      <div class="glass-card" style="padding:1.8rem;opacity:0.5;cursor:not-allowed;">
+        <div style="font-size:1.8rem;margin-bottom:0.8rem;">📊</div>
+        <div class="card-title">Data Science</div>
+        <p class="card-excerpt" style="margin-bottom:0.8rem;">Statistical analysis, data visualization, Python, pandas, and machine learning workflows.</p>
+        <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.2rem 0.7rem;">COMING SOON</span>
+      </div>
+      <div class="glass-card" style="padding:1.8rem;opacity:0.5;cursor:not-allowed;">
+        <div style="font-size:1.8rem;margin-bottom:0.8rem;">⚙️</div>
+        <div class="card-title">DevOps</div>
+        <p class="card-excerpt" style="margin-bottom:0.8rem;">CI/CD pipelines, Docker, Kubernetes, Infrastructure as Code, and modern deployment strategies.</p>
+        <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.2rem 0.7rem;">COMING SOON</span>
+      </div>
+      <div class="glass-card" style="padding:1.8rem;opacity:0.5;cursor:not-allowed;">
+        <div style="font-size:1.8rem;margin-bottom:0.8rem;">📱</div>
+        <div class="card-title">Mobile Development</div>
+        <p class="card-excerpt" style="margin-bottom:0.8rem;">React Native, Flutter, Swift, Kotlin — building cross-platform apps that feel native everywhere.</p>
+        <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.2rem 0.7rem;">COMING SOON</span>
+      </div>
+      <div class="glass-card" style="padding:1.8rem;opacity:0.5;cursor:not-allowed;">
+        <div style="font-size:1.8rem;margin-bottom:0.8rem;">⛓️</div>
+        <div class="card-title">Blockchain</div>
+        <p class="card-excerpt" style="margin-bottom:0.8rem;">Distributed ledgers, smart contracts, Web3, DeFi, and the decentralised internet of tomorrow.</p>
+        <span style="font-family:var(--font-mono);font-size:0.62rem;color:var(--text-muted);border:1px solid rgba(122,138,176,0.2);border-radius:50px;padding:0.2rem 0.7rem;">COMING SOON</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">⬡ TechExplorer</a>
+        <p>Your premium hub for exploring modern technologies. Designed for students, developers, and curious minds worldwide.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Twitter">𝕏</a>
+          <a href="#" class="social-link" title="GitHub">⌨</a>
+          <a href="#" class="social-link" title="LinkedIn">in</a>
+          <a href="#" class="social-link" title="YouTube">▶</a>
+          <a href="#" class="social-link" title="Discord">◈</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="topics.html">Topics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="topic-ai.html">Artificial Intelligence</a></li>
+          <li><a href="topic-webdev.html">Web Development</a></li>
+          <li><a href="topic-cybersecurity.html">Cyber Security</a></li>
+          <li><a href="topic-cloud.html">Cloud Computing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Sitemap</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <a href="index.html">TechExplorer</a>. Crafted with ❤️ for learners everywhere.</p>
+      <p>Built with HTML & CSS — No JavaScript Required</p>
+    </div>
+  </footer>
+
+</body>
+</html>

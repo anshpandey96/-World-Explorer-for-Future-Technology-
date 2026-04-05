@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cyber Security — Tech Explorer</title>
+  <meta name="description" content="Explore Cyber Security — ethical hacking, encryption, firewalls, zero-trust, penetration testing, and digital defence strategies." />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .topic-page-title { color: #ff2d7a; text-shadow: 0 0 30px #ff2d7a; }
+    .topic-icon-large { filter: drop-shadow(0 0 20px #ff2d7a); }
+    .topic-header::before { background: radial-gradient(ellipse at center, rgba(255,45,122,0.06) 0%, transparent 70%); }
+    .key-points-card h3 { color: #ff2d7a; }
+    .key-points-list li::before { color: #ff2d7a; }
+    .info-badge { background: rgba(255,45,122,0.1); color: #ff2d7a; border-color: rgba(255,45,122,0.25); }
+    .progress-bar-fill { background: linear-gradient(90deg, #ff2d7a, #b94dff); box-shadow: 0 0 10px #ff2d7a; }
+    .neon-label { color: #ff2d7a; }
+    .neon-label::before { background: linear-gradient(90deg, transparent, #ff2d7a); }
+    .neon-label::after  { background: linear-gradient(90deg, #ff2d7a, transparent); }
+  </style>
+</head>
+<body>
+
+  <!-- ====================== NAVBAR ====================== -->
+  <nav class="navbar">
+    <a href="index.html" class="logo">⬡ Tech<span>Explorer</span></a>
+    <button class="hamburger" onclick="this.nextElementSibling.classList.toggle('open')" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="topics.html" class="active">Topics</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====================== TOPIC HEADER ====================== -->
+  <header class="topic-header">
+    <span class="topic-icon-large">🔐</span>
+    <div class="neon-label">Deep Dive</div>
+    <h1 class="topic-page-title">Cyber Security</h1>
+    <p class="topic-tagline">Defending the digital world in an era of sophisticated threats</p>
+    <div style="display:flex;gap:0.6rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem;">
+      <span class="info-badge">Ethical Hacking</span>
+      <span class="info-badge">Encryption</span>
+      <span class="info-badge">Zero Trust</span>
+      <span class="info-badge">Penetration Testing</span>
+      <span class="info-badge">Firewalls</span>
+    </div>
+  </header>
+
+  <!-- ====================== CONTENT ====================== -->
+  <div class="topic-content-wrapper">
+
+    <!-- Main Body -->
+    <main class="topic-body">
+
+      <h3>What is Cyber Security?</h3>
+      <p>
+        Cybersecurity is the practice of protecting systems, networks, programs, and data from digital attacks, unauthorised access, damage, or exploitation. As our world becomes increasingly interconnected — with billions of devices, critical infrastructure, financial systems, and personal data all residing online — cybersecurity has become one of the most strategically important fields in technology.
+      </p>
+      <p>
+        Cyber threats are not static. They evolve continuously, with threat actors ranging from lone script kiddies and opportunistic criminals to sophisticated nation-state actors conducting long-running espionage campaigns. The 2024 IBM Cost of a Data Breach report found that the average data breach costs organisations $4.88 million — a figure that doesn't account for reputational damage, regulatory fines, or lost customer trust.
+      </p>
+
+      <h3>Types of Cyber Threats</h3>
+      <p>
+        Understanding the threat landscape is the first step in building effective defences. <strong style="color:var(--text-primary);">Malware</strong> encompasses viruses, ransomware, trojans, spyware, and worms designed to damage or infiltrate systems. <strong style="color:var(--text-primary);">Phishing</strong> attacks use deceptive emails or websites to trick users into revealing credentials or downloading malicious payloads. <strong style="color:var(--text-primary);">SQL Injection</strong> and <strong style="color:var(--text-primary);">Cross-Site Scripting (XSS)</strong> exploit vulnerabilities in web applications. <strong style="color:var(--text-primary);">DDoS (Distributed Denial of Service)</strong> attacks overwhelm servers with traffic, rendering services unavailable.
+      </p>
+      <p>
+        Advanced Persistent Threats (APTs) are long-term, targeted attacks where adversaries maintain a persistent, stealthy presence in a network — often for months or years — before executing their ultimate objective. Social engineering attacks exploit human psychology rather than technical vulnerabilities, making them notoriously difficult to defend against with purely technical controls.
+      </p>
+
+      <h3>Core Defence Strategies</h3>
+      <p>
+        Modern cybersecurity operates on a layered defence model — the idea that no single control is sufficient, and organisations must build overlapping layers of protection. <strong style="color:var(--text-primary);">Firewalls</strong> filter traffic at the network perimeter. <strong style="color:var(--text-primary);">Intrusion Detection and Prevention Systems (IDS/IPS)</strong> monitor for suspicious activity. <strong style="color:var(--text-primary);">Endpoint Detection and Response (EDR)</strong> tools protect individual devices. <strong style="color:var(--text-primary);">Security Information and Event Management (SIEM)</strong> aggregates and correlates logs from across the infrastructure to detect anomalies in real time.
+      </p>
+      <p>
+        The <strong style="color:var(--text-primary);">Zero Trust Architecture</strong> — "never trust, always verify" — has become the gold standard for modern enterprise security. It assumes that no user, device, or network segment is inherently trusted, even inside the corporate perimeter, and requires continuous verification for all access requests.
+      </p>
+
+      <h3>Ethical Hacking and Penetration Testing</h3>
+      <p>
+        Ethical hacking (also called penetration testing or "red teaming") is the authorised practice of attacking an organisation's own systems to identify vulnerabilities before malicious actors can exploit them. Ethical hackers use the same tools and techniques as attackers — port scanners, exploit frameworks like Metasploit, password crackers, and network sniffers — but with explicit permission and clear rules of engagement.
+      </p>
+      <p>
+        Certifications like CEH (Certified Ethical Hacker), OSCP (Offensive Security Certified Professional), and CompTIA Security+ validate expertise in this domain. Bug bounty programmes — offered by companies like Google, Apple, and Meta — pay researchers to find and responsibly disclose vulnerabilities in their products.
+      </p>
+
+      <h3>Encryption: The Backbone of Digital Privacy</h3>
+      <p>
+        Encryption transforms readable data (plaintext) into an unreadable format (ciphertext) that can only be decrypted with the correct key. <strong style="color:var(--text-primary);">AES (Advanced Encryption Standard)</strong> with 256-bit keys is the current gold standard for symmetric encryption. <strong style="color:var(--text-primary);">RSA</strong> and <strong style="color:var(--text-primary);">Elliptic Curve Cryptography (ECC)</strong> power asymmetric (public-key) encryption, securing everything from HTTPS connections to digital signatures and cryptocurrencies.
+      </p>
+
+      <div class="glass-card" style="padding:1.8rem;margin-top:2rem;border-left:3px solid #ff2d7a;">
+        <div style="font-family:var(--font-mono);font-size:0.7rem;color:#ff2d7a;letter-spacing:2px;margin-bottom:0.5rem;">SECURITY REMINDER</div>
+        <p style="margin:0;font-style:italic;color:var(--text-muted);">The weakest link in any security system is almost always the human element. No amount of technical controls can fully compensate for insufficient security awareness training. Organisations that invest in their people are significantly more resilient than those that rely on technology alone.</p>
+      </div>
+
+      <hr class="glow-divider" />
+
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="index.html" class="btn btn-back">← Back to Home</a>
+        <a href="topics.html" class="btn btn-outline">All Topics</a>
+        <a href="topic-cloud.html" class="btn btn-primary" style="background:linear-gradient(135deg,#ff2d7a,#b94dff);">Next: Cloud Computing →</a>
+      </div>
+
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="topic-sidebar">
+
+      <div class="glass-card key-points-card">
+        <h3>⚡ Key Points</h3>
+        <ul class="key-points-list">
+          <li>Cybersecurity protects systems, networks, and data from digital attacks</li>
+          <li>Malware, phishing, and DDoS are the most common threats</li>
+          <li>Zero Trust Architecture — "never trust, always verify"</li>
+          <li>Encryption protects data in transit and at rest</li>
+          <li>Ethical hackers test defences to find vulnerabilities first</li>
+          <li>SIEM systems monitor and correlate security events in real time</li>
+          <li>Multi-Factor Authentication (MFA) is essential for all accounts</li>
+          <li>Human error remains the #1 cause of security breaches</li>
+        </ul>
+      </div>
+
+      <div class="glass-card info-card">
+        <h4>Difficulty Level</h4>
+        <span class="info-badge">Intermediate</span>
+        <div class="progress-bar-wrap" style="margin-top:0.8rem;">
+          <div class="progress-bar-fill" style="width:70%;"></div>
+        </div>
+        <p style="font-size:0.78rem;color:var(--text-muted);margin-top:0.5rem;margin-bottom:0;">Technical depth required for specialisation</p>
+      </div>
+
+      <div class="glass-card info-card">
+        <h4>Related Topics</h4>
+        <div>
+          <a href="topic-ai.html" style="display:flex;align-items:center;gap:8px;padding:0.5rem 0;text-decoration:none;color:var(--text-muted);font-size:0.88rem;border-bottom:1px solid rgba(0,240,255,0.06);transition:color 0.3s;" onmouseover="this.style.color='var(--cyan)'" onmouseout="this.style.color='var(--text-muted)'">🤖 Artificial Intelligence</a>
+          <a href="topic-webdev.html" style="display:flex;align-items:center;gap:8px;padding:0.5rem 0;text-decoration:none;color:var(--text-muted);font-size:0.88rem;border-bottom:1px solid rgba(0,240,255,0.06);transition:color 0.3s;" onmouseover="this.style.color='#ff7b00'" onmouseout="this.style.color='var(--text-muted)'">🌐 Web Development</a>
+          <a href="topic-cloud.html" style="display:flex;align-items:center;gap:8px;padding:0.5rem 0;text-decoration:none;color:var(--text-muted);font-size:0.88rem;transition:color 0.3s;" onmouseover="this.style.color='#00c6ff'" onmouseout="this.style.color='var(--text-muted)'">☁️ Cloud Computing</a>
+        </div>
+      </div>
+
+      <div class="glass-card info-card">
+        <h4>Key Tools & Certs</h4>
+        <div>
+          <span class="info-badge">Metasploit</span>
+          <span class="info-badge">Wireshark</span>
+          <span class="info-badge">Nmap</span>
+          <span class="info-badge">Burp Suite</span>
+          <span class="info-badge">OSCP</span>
+          <span class="info-badge">CEH</span>
+          <span class="info-badge">CompTIA Sec+</span>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">⬡ TechExplorer</a>
+        <p>Your premium hub for exploring modern technologies.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">𝕏</a>
+          <a href="#" class="social-link">⌨</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">▶</a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Topics</h4><ul>
+        <li><a href="topic-ai.html">Artificial Intelligence</a></li>
+        <li><a href="topic-webdev.html">Web Development</a></li>
+        <li><a href="topic-cybersecurity.html">Cyber Security</a></li>
+        <li><a href="topic-cloud.html">Cloud Computing</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Pages</h4><ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="topics.html">Topics</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></div>
+      <div class="footer-col"><h4>Connect</h4><ul>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 <a href="index.html">TechExplorer</a>. Crafted with ❤️</p>
+      <p>Built with HTML & CSS — No JavaScript Required</p>
+    </div>
+  </footer>
+
+</body>
+</html>
